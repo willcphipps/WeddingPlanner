@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/FullStackCSharp/WeddingPlanner/Views/Home/Add.cshtml",
+      "TargetPath": "Views\\Home\\Add.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/FullStackCSharp/WeddingPlanner/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
@@ -2986,6 +2991,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/FullStackCSharp/WeddingPlanner/Views/Home/Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/FullStackCSharp/WeddingPlanner/Views/Home/Registration.cshtml",
+      "TargetPath": "Views\\Home\\Registration.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/FullStackCSharp/WeddingPlanner/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -2998,6 +3013,11 @@
     {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/FullStackCSharp/WeddingPlanner/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/FullStackCSharp/WeddingPlanner/Views/Home/Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
       "FileKind": "mvc"
     }
   ],

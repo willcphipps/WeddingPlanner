@@ -1,0 +1,42 @@
+@model List<Wedding>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-5">Welcome to the wedding planner</h1>
+        <p class="lead">Jumbo helper text</p>
+        <hr class="my-2">
+            <a class="float-left btn btn-outline-dark btn-md" href="Add" role="button">Add New</a>
+            <a class="float-right btn btn-outline-dark btn-md" href="Logout" role="button">Logout</a>
+    </div>
+</div>
+<table class="mt-5 table table-striped table-inverse">
+    <thead class="thead-inverse">
+        <tr>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guests</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach(var one in Model){
+            <tr>
+                <td scope="row">@one.Bride and @one.Groom</td>
+                <td>@one.Date</td>
+                <td>@one.RSVPs.Count</td>
+                <td>
+                    @if(one.Creator.UserId == ViewBag.User.UserId){
+                        <a class="text-danger" href="cancel/@one.WeddingId">Divorce</a>
+                    }else{
+                        if(one.RSVPs.All(r => r.UserId != ViewBag.User.UserId)){
+                            <a class="text-warning" href="Join/@ViewBag.User.UserId/@one.WeddingId">RSVP</a>
+                        }
+                        if(one.RSVPs.Any(r => r.UserId == ViewBag.User.UserId)){
+                            <a class="text-info" href="Leave/@ViewBag.User.UserId/@one.WeddingId">Nope</a>
+                        }
+                    }
+
+                </td>
+            </tr>
+            }
+        </tbody>
+</table>

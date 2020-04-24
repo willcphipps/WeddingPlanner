@@ -1,0 +1,36 @@
+@model Wedding
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-5">Lets get married!</h1>
+        <p class="lead">Enter info below to <span class="text-warning"><i>save the date</i></span></p>
+        <hr class="my-2">
+            <a class="float-left btn btn-outline-dark btn-md" href="/" role="button">Dashboard</a>
+            <a class="float-right btn btn-outline-dark btn-md" href="Logout" role="button">Logout</a>
+    </div>
+</div>
+    <form asp-action="Create" method="post" class="">
+        <div class="">
+            <span asp-validation-for="Bride"></span>
+            <label asp-for="Bride"></label>
+            <input asp-for="Bride" class="form-control">
+        </div>
+        <div class="">
+            <span asp-validation-for="Groom"></span>
+            <label asp-for="Groom"></label>
+            <input asp-for="Groom" class="form-control">
+        </div>
+        <div class="">
+            <span asp-validation-for="Address"></span>
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="form-control">
+        </div>
+        <div class="">
+            <span asp-validation-for="Date"></span>
+            <label asp-for="Date"></label>
+            <input asp-for="Date" class="form-control">
+        </div>
+            <br>
+            <input type="submit" value="Get Hitched!" class="btn btn-outline-success">
+            
+        </div>
+    </form>

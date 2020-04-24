@@ -27,12 +27,11 @@ namespace WeddingPlanner.Models {
         [MinLength (8, ErrorMessage = "Password must be 8 characters or longer!")]
         [Display (Name = "Password : ")]
         public string Password { get; set; }
-
+        public List<Invitation> Attending { get; set; }
         [NotMapped]
         [Compare ("Password")]
         [DataType (DataType.Password)]
         [Display (Name = "Confirm Pasword : ")]
         public string Confirm { get; set; }
-        public List<Wedding> Attending { get; set; }
     }
 }
